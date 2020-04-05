@@ -1,0 +1,5 @@
+**/node_modules
+backend/dist
+app/frontend/src/apis
+**/*.js
+**/frontend/src/api/auto-generated

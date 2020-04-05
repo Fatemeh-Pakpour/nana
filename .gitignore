@@ -1,0 +1,21 @@
+node_modules/
+.env/
+DS_Store
+.vscode/
+.cache/
+dist/
+coverage/
+npm-debug.log
+.next
+cypress/videos
+cypress/screenshots
+dist-backend
+e2e/report
+app/backend/build
+.vscode/launch.json
+
+frontend/storybook
+
+# Ignore DevSpace cache and log folder
+.devspace/
+
