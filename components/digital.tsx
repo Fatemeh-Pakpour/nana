@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { memo, useEffect } from 'react';
 import styled from 'styled-components';
 
-interface DigitalProps {
-  children: any;
-}
+export const DigitalClock = memo(() => {
+  const [date, setDate] = React.useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
 
-export const DigitalClock = ({ children }) => <div>{children}</div>;
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <>
+      <h1>Hello, world!</h1>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </>
+  );
+});
