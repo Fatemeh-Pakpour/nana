@@ -1,6 +1,12 @@
 import React, { memo, useEffect } from 'react';
 import styled from 'styled-components';
 
+const StyledDigitalClock = styled.div`
+background-color:red;
+width:180px;
+
+`;
+
 export const DigitalClock = memo(() => {
   const [date, setDate] = React.useState(new Date());
   useEffect(() => {
@@ -15,9 +21,9 @@ export const DigitalClock = memo(() => {
   }
 
   return (
-    <>
+    <StyledDigitalClock >
       <h1>Hello, world!</h1>
       <h2>It is {date.toLocaleTimeString()}.</h2>
-    </>
+    </StyledDigitalClock >
   );
 });
