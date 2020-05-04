@@ -1,10 +1,11 @@
 import React, { memo, useEffect } from 'react';
 import styled from 'styled-components';
+import {grey105} from '../commen/styles/colors'
+import { rem } from '../commen/mixins';
 
 const StyledDigitalClock = styled.div`
-background-color:red;
-width:180px;
-
+background-color:${grey105};
+width:${rem(180)};
 `;
 
 export const DigitalClock = memo(() => {
