@@ -2,23 +2,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@common/*": [
-        "./common/*"
-      ],
-      "@app/*": [
-        "./app/frontend/src/*"
-      ],
-      "@app-backend/*": [
-        "./app/backend/*"
-      ]
+      "@common/*": ["./common/*"],
+      "@app/*": ["./app/frontend/src/*"],
+      "@app-backend/*": ["./app/backend/*"]
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "preserve",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
+    "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -39,13 +30,6 @@
     "esModuleInterop": true,
     "isolatedModules": true
   },
-  "exclude": [
-    "**/*.spec.ts",
-    "**/*.e2e-spec.ts"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["**/*.spec.ts", "**/*.e2e-spec.ts"],
+  "include": ["app/frontend/next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
